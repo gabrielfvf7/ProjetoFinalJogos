@@ -1513,6 +1513,103 @@
           "identifier": "https://resources.gdevelop-app.com/assets/Generic Items (160 assets)/PNG/Tablet2.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bottom arrow button2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bottom arrow button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/On-Screen Controls/Sprites/Flat Dark/Bottom arrow button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Left arrow button2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Left arrow button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/On-Screen Controls/Sprites/Flat Dark/Left arrow button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Right arrow button2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Right arrow button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/On-Screen Controls/Sprites/Flat Dark/Right arrow button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Top arrow button2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Top arrow button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/On-Screen Controls/Sprites/Flat Dark/Top arrow button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/card 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\card 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bottom arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Bottom arrow button.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Left arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Left arrow button.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Right arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Right arrow button.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Top arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Top arrow button.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1567,7 +1664,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1
+        "zoomFactor": 0.976
       },
       "objectsGroups": [],
       "variables": [],
@@ -2109,8 +2206,8 @@
           "name": "TxtMover",
           "persistentUuid": "097d1c90-8f59-482b-84d8-cc212fa8f9d3",
           "width": 0,
-          "x": 615,
-          "y": 251,
+          "x": 513,
+          "y": 183,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -2151,15 +2248,47 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 141,
+          "height": 98,
           "layer": "",
           "locked": false,
           "name": "TabletMoverEsquerda",
           "persistentUuid": "2cb28d03-201a-4ced-a30b-bbd974bd4790",
-          "width": 121,
-          "x": 401,
-          "y": 407,
+          "width": 98,
+          "x": 578,
+          "y": 389,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 98,
+          "layer": "",
+          "locked": false,
+          "name": "TabletMoverDireita",
+          "persistentUuid": "4c15ad38-25aa-415f-9d8e-6f80fcc49bc2",
+          "width": 98,
+          "x": 675,
+          "y": 389,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 176,
+          "layer": "",
+          "locked": false,
+          "name": "TabletMover",
+          "persistentUuid": "09937c8c-2091-4c5f-b614-da64b799225b",
+          "width": 147,
+          "x": 509,
+          "y": 419,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2170,12 +2299,172 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "VarMoverEsquerda",
-          "persistentUuid": "7fb6792c-dbeb-42a1-ba0c-fd19226f1b7e",
+          "name": "VarMover",
+          "persistentUuid": "57204e6a-e7a4-45a0-a923-6352e9d6045f",
           "width": 0,
-          "x": 337,
-          "y": 454,
-          "zOrder": 22,
+          "x": 487,
+          "y": 494,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 176,
+          "layer": "",
+          "locked": false,
+          "name": "TabletMover",
+          "persistentUuid": "64596ff8-fae2-402c-90e1-8e2ca2184726",
+          "width": 147,
+          "x": 557,
+          "y": 248,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "VarMover",
+          "persistentUuid": "c77b469a-1526-4175-8f37-919743a20337",
+          "width": 0,
+          "x": 535,
+          "y": 323,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 68,
+          "layer": "",
+          "locked": false,
+          "name": "RightArrowButton",
+          "persistentUuid": "bea7925e-5147-4057-96d7-55980627b791",
+          "width": 68,
+          "x": 606,
+          "y": 404,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 68,
+          "layer": "",
+          "locked": false,
+          "name": "LeftArrowButton",
+          "persistentUuid": "5acdffe8-7b1a-4008-b741-65e39c187b93",
+          "width": 68,
+          "x": 506,
+          "y": 404,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "CardMoverDireita",
+          "persistentUuid": "eff5d85f-d63c-4ae9-957e-dca6cb756076",
+          "width": 100,
+          "x": 590,
+          "y": 388,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "CardMoverEsquerda",
+          "persistentUuid": "818ccd3d-abc2-4439-a07f-8531a95d6fcd",
+          "width": 100,
+          "x": 490,
+          "y": 388,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "CardMoverCima",
+          "persistentUuid": "1139fb2f-bf86-41bd-b722-a1280a40b0aa",
+          "width": 100,
+          "x": 540,
+          "y": 288,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "CardMoverBaixo",
+          "persistentUuid": "f294df80-2d9c-498a-a819-cd1abf3cb662",
+          "width": 100,
+          "x": 540,
+          "y": 488,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 68,
+          "layer": "",
+          "locked": false,
+          "name": "TopArrowButton",
+          "persistentUuid": "0a8f115a-6ccd-4241-b9b5-0587b340f617",
+          "width": 68,
+          "x": 556,
+          "y": 304,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 68,
+          "layer": "",
+          "locked": false,
+          "name": "BottomArrowButton",
+          "persistentUuid": "34026644-f488-44a9-9881-2af6a4251e9d",
+          "width": 68,
+          "x": 556,
+          "y": 504,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2434,7 +2723,26 @@
           }
         },
         {
-          "name": "TabletMoverDireita",
+          "bold": false,
+          "italic": false,
+          "name": "TxtMover",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Movimentação\n",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "CardMoverCima",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2451,7 +2759,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Tablet2.png",
+                      "image": "assets\\card 1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2473,23 +2781,277 @@
           ]
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "TxtMover",
-          "smoothed": true,
+          "name": "TopArrowButton",
           "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
           "behaviors": [],
-          "string": "Movimentação\n",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Top arrow button.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CardMoverBaixo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\card 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BottomArrowButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Bottom arrow button.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CardMoverEsquerda",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\card 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LeftArrowButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Left arrow button.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CardMoverDireita",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\card 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RightArrowButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Right arrow button.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "bold": false,
@@ -2528,45 +3090,6 @@
             "g": 0,
             "r": 0
           }
-        },
-        {
-          "name": "TabletMoverEsquerda",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.025,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Tablet2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -2978,7 +3501,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "TabletMoverDireita",
+                "CardMoverDireita",
                 "",
                 "",
                 ""
@@ -3058,7 +3581,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "TabletMoverEsquerda",
+                "CardMoverEsquerda",
                 "",
                 "",
                 ""
@@ -3138,7 +3661,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "TabletMoverDireita",
+                "CardMoverCima",
                 "",
                 "",
                 ""
@@ -3176,7 +3699,7 @@
               "parameters": [
                 "ActualMove",
                 "=",
-                "\"up\""
+                "\"right\""
               ],
               "subInstructions": []
             },
@@ -3198,9 +3721,9 @@
               "parameters": [
                 "CloseRoundButton",
                 "=",
-                "GreyBlock.X() + (CloseRoundButton.Width() / 4)",
+                "GreyBlock.X() + (GreyBlock.Width() / 4)",
                 "=",
-                "GreyBlock.Y() + (CloseRoundButton.Width() / 4)"
+                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
               ],
               "subInstructions": []
             }
@@ -3218,7 +3741,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "TabletMoverDireita",
+                "CardMoverBaixo",
                 "",
                 "",
                 ""
@@ -3256,7 +3779,7 @@
               "parameters": [
                 "ActualMove",
                 "=",
-                "\"down\""
+                "\"right\""
               ],
               "subInstructions": []
             },
@@ -3278,9 +3801,9 @@
               "parameters": [
                 "CloseRoundButton",
                 "=",
-                "GreyBlock.X() + (CloseRoundButton.Width() / 4)",
+                "GreyBlock.X() + (GreyBlock.Width() / 4)",
                 "=",
-                "GreyBlock.Y() + (CloseRoundButton.Width() / 4)"
+                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
               ],
               "subInstructions": []
             }
