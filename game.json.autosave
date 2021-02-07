@@ -1627,12 +1627,7 @@
     },
     {
       "name": "ActualPlayer",
-      "children": [
-        {
-          "name": "ChildVariable",
-          "value": ""
-        }
-      ]
+      "value": "2"
     },
     {
       "name": "ActualMove",
@@ -1664,7 +1659,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.976
+        "zoomFactor": 0.88
       },
       "objectsGroups": [],
       "variables": [],
@@ -1679,7 +1674,7 @@
           "persistentUuid": "62b66f3b-2330-427d-90a3-c6f161179c18",
           "width": 1165,
           "x": -168,
-          "y": -169,
+          "y": -168,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -2468,6 +2463,70 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "ObjVariableBlock2Up",
+          "persistentUuid": "95b73a9c-acb8-488d-81e8-3949677d8028",
+          "width": 0,
+          "x": 259,
+          "y": -128,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "ObjVariableBlock2Down",
+          "persistentUuid": "5f75590d-b9de-411d-bd87-3e17c5cb9f28",
+          "width": 0,
+          "x": 260,
+          "y": -102,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "ObjVariableBlock2Right",
+          "persistentUuid": "762bf6df-066a-43a5-acef-1742cad41997",
+          "width": 0,
+          "x": 259,
+          "y": -80,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "ObjVariableBlock2Left",
+          "persistentUuid": "e81e9107-4f2a-4307-a142-1e6763df1eb7",
+          "width": 0,
+          "x": 261,
+          "y": -57,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3090,6 +3149,82 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "ObjVariableBlock2Up",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "ObjVariableBlock2Up",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "ObjVariableBlock2Down",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "ObjVariableBlock2Down",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "ObjVariableBlock2Right",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "ObjVariableBlock2Right",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "ObjVariableBlock2Left",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "ObjVariableBlock2Left",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -3201,7 +3336,7 @@
               },
               "parameters": [
                 "",
-                "ObjVariableBlockUp"
+                "ObjVariableBlock2Up"
               ],
               "subInstructions": []
             },
@@ -3224,6 +3359,50 @@
               "parameters": [
                 "",
                 "ObjVariableBlockDown"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::RemoveAllLinksOf"
+              },
+              "parameters": [
+                "",
+                "ObjVariableBlock2Down"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::RemoveAllLinksOf"
+              },
+              "parameters": [
+                "",
+                "ObjVariableBlock2Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::RemoveAllLinksOf"
+              },
+              "parameters": [
+                "",
+                "ObjVariableBlock2Up"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::RemoveAllLinksOf"
+              },
+              "parameters": [
+                "",
+                "ObjVariableBlock2Right"
               ],
               "subInstructions": []
             }
@@ -3537,9 +3716,9 @@
                 "value": "VarGlobalTxt"
               },
               "parameters": [
-                "ActualMove",
+                "ActualPlayer",
                 "=",
-                "\"right\""
+                "\"1\""
               ],
               "subInstructions": []
             },
@@ -3564,6 +3743,18 @@
                 "GreyBlock.X() + (GreyBlock.Width() / 4)",
                 "=",
                 "GreyBlock.Y() + (GreyBlock.Width() / 4)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
               ],
               "subInstructions": []
             }
@@ -3617,9 +3808,9 @@
                 "value": "VarGlobalTxt"
               },
               "parameters": [
-                "ActualMove",
+                "ActualPlayer",
                 "=",
-                "\"right\""
+                "\"1\""
               ],
               "subInstructions": []
             },
@@ -3633,6 +3824,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -3697,9 +3900,9 @@
                 "value": "VarGlobalTxt"
               },
               "parameters": [
-                "ActualMove",
+                "ActualPlayer",
                 "=",
-                "\"right\""
+                "\"1\""
               ],
               "subInstructions": []
             },
@@ -3713,6 +3916,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -3777,9 +3992,101 @@
                 "value": "VarGlobalTxt"
               },
               "parameters": [
-                "ActualMove",
+                "ActualPlayer",
                 "=",
-                "\"right\""
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "CloseRoundButton",
+                "=",
+                "GreyBlock.X() + (GreyBlock.Width() / 4)",
+                "=",
+                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Right"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CardMoverDireita",
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             },
@@ -3799,11 +4106,559 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "CloseRoundButton",
+                "CloseRoundButton2",
                 "=",
                 "GreyBlock.X() + (GreyBlock.Width() / 4)",
                 "=",
                 "GreyBlock.Y() + (GreyBlock.Width() / 4)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CardMoverEsquerda",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "CloseRoundButton2",
+                "=",
+                "GreyBlock.X() + (GreyBlock.Width() / 4)",
+                "=",
+                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CardMoverCima",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Up"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "CloseRoundButton2",
+                "=",
+                "GreyBlock.X() + (GreyBlock.Width() / 4)",
+                "=",
+                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CardMoverBaixo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Down"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "ActualPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "CloseRoundButton2",
+                "=",
+                "GreyBlock.X() + (GreyBlock.Width() / 4)",
+                "=",
+                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Raycast"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2.X()",
+                "CloseRoundButton2.Y()",
+                "270",
+                "GreyBlock.Height()",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Up"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "GreyBlock",
+                "=",
+                "250"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Raycast"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2.X()",
+                "CloseRoundButton2.Y()",
+                "0",
+                "GreyBlock.Height()",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "GreyBlock",
+                "=",
+                "250"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Right"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Raycast"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2.X()",
+                "CloseRoundButton2.Y()",
+                "90",
+                "GreyBlock.Height()",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "GreyBlock",
+                "=",
+                "250"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Down"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Raycast"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2.X()",
+                "CloseRoundButton2.Y()",
+                "180",
+                "GreyBlock.Height()",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "GreyBlock",
+                "CloseRoundButton2",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "GreyBlock",
+                "=",
+                "250"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "GreyBlock",
+                "ObjVariableBlock2Left"
               ],
               "subInstructions": []
             }
