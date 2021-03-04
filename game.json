@@ -5752,436 +5752,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "disabled": true,
-          "folded": true,
-          "name": "Player1 movement OLD",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverBaixo",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlockDown"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CloseRoundButton",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverEsquerda",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlockLeft"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CloseRoundButton",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverCima",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlockUp"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CloseRoundButton",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverDireita",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlockRight"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CloseRoundButton",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "disabled": false,
           "folded": false,
           "name": "Player1 movement",
@@ -6305,20 +5875,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -6343,12 +5899,10 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 }
@@ -6484,20 +6038,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -6510,24 +6050,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
-                    "varCurrentPiece",
+                    "CurrentPlayerText",
                     "=",
-                    "\"King\""
+                    "\"Player 2\""
                   ],
                   "subInstructions": []
                 }
@@ -6651,20 +6189,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -6677,24 +6201,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
-                    "varCurrentPiece",
+                    "CurrentPlayerText",
                     "=",
-                    "\"King\""
+                    "\"Player 2\""
                   ],
                   "subInstructions": []
                 }
@@ -6830,20 +6352,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -6856,24 +6364,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
-                    "varCurrentPiece",
+                    "CurrentPlayerText",
                     "=",
-                    "\"King\""
+                    "\"Player 2\""
                   ],
                   "subInstructions": []
                 }
@@ -6997,20 +6503,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -7023,24 +6515,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
-                    "varCurrentPiece",
+                    "CurrentPlayerText",
                     "=",
-                    "\"King\""
+                    "\"Player 2\""
                   ],
                   "subInstructions": []
                 }
@@ -7176,20 +6666,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -7202,24 +6678,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
-                    "varCurrentPiece",
+                    "CurrentPlayerText",
                     "=",
-                    "\"King\""
+                    "\"Player 2\""
                   ],
                   "subInstructions": []
                 }
@@ -7343,20 +6817,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -7369,24 +6829,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 2\""
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
-                    "varCurrentPiece",
+                    "CurrentPlayerText",
                     "=",
-                    "\"King\""
+                    "\"Player 2\""
                   ],
                   "subInstructions": []
                 }
@@ -7522,26 +6980,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "varCurrentPlayer",
                     "=",
                     "\"2\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
@@ -7554,736 +7008,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": true,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "CardMoverCima",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "LinkedObjects::PickObjectsLinkedTo"
-              },
-              "parameters": [
-                "",
-                "GreyBlock",
-                "ObjVariableBlockUp"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobalTxt"
-              },
-              "parameters": [
-                "varCurrentPlayer",
-                "=",
-                "\"1\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobalTxt"
-              },
-              "parameters": [
-                "varCurrentPiece",
-                "=",
-                "\"King\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "CurrentPiece",
-                "=",
-                "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                "=",
-                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "King1",
-                "=",
-                "CurrentPiece.X()",
-                "=",
-                "CurrentPiece.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobalTxt"
-              },
-              "parameters": [
-                "varCurrentPlayer",
-                "=",
-                "\"2\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "CurrentPlayerText",
-                "=",
-                "\"Player 2\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobalTxt"
-              },
-              "parameters": [
-                "varCurrentPiece",
-                "=",
-                "\"King\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "CurrentPiece",
-                "=",
-                "King2.X()",
-                "=",
-                "King2.Y()"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": true,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "CardMoverCima",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "LinkedObjects::PickObjectsLinkedTo"
-              },
-              "parameters": [
-                "",
-                "GreyBlock",
-                "ObjVariableBlockUp"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobalTxt"
-              },
-              "parameters": [
-                "varCurrentPlayer",
-                "=",
-                "\"1\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobalTxt"
-              },
-              "parameters": [
-                "varCurrentPlayer",
-                "=",
-                "\"2\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "CurrentPlayerText",
-                "=",
-                "\"Player 2\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "CurrentPiece",
-                "=",
-                "King2.X() + (King2.Width() / 4)",
-                "=",
-                "King2.Y() + (King2.Width() / 4)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "King1",
-                "=",
-                "CurrentPiece.X()",
-                "=",
-                "CurrentPiece.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "King1",
-                "=",
-                "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                "=",
-                "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": true,
-          "folded": true,
-          "name": "Player2 movement OLD",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverEsquerda",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "King2",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverDireita",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Right"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "King2",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverBaixo",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Down"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "King2",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "CardMoverCima",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Up"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "CurrentPlayerText",
-                    "=",
-                    "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "King2",
-                    "=",
-                    "GreyBlock.X() + (GreyBlock.Width() / 4)",
-                    "=",
-                    "GreyBlock.Y() + (GreyBlock.Width() / 4)"
                   ],
                   "subInstructions": []
                 }
@@ -8421,20 +7145,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -8453,18 +7163,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -8600,20 +7298,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -8632,18 +7316,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -8767,20 +7439,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -8799,18 +7457,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -8946,20 +7592,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -8978,18 +7610,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -9113,20 +7733,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -9145,18 +7751,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -9292,20 +7886,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -9324,18 +7904,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -9459,20 +8027,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -9491,18 +8045,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -9638,20 +8180,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
@@ -9670,18 +8198,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
                   ],
                   "subInstructions": []
                 }
