@@ -1689,7 +1689,7 @@
     },
     {
       "name": "varCurrentPlayer",
-      "value": "2"
+      "value": "1"
     },
     {
       "name": "varCurrentMove",
@@ -4104,18 +4104,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Cache"
                   },
                   "parameters": [
@@ -4343,6 +4331,732 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
+          "name": "GreyBlock Raycast",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "270",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlockUp"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "0",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlockRight"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "90",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlockDown"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "180",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlockLeft"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "270",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"2\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlock2Up"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "0",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"2\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlock2Right"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "90",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"2\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlock2Down"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Raycast"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece.X()",
+                    "CurrentPiece.Y()",
+                    "180",
+                    "GreyBlock.Height()",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPlayer",
+                    "=",
+                    "\"2\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "CurrentPiece",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "!=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "GreyBlock",
+                    "=",
+                    "250"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "GreyBlock",
+                    "ObjVariableBlock2Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
           "name": "End",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4477,480 +5191,6 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 2 won\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": true,
-          "name": "CurrentPiece select",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "King1",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::RemoveAllLinksOf"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "King1",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "King1",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King1.X()",
-                    "=",
-                    "King1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Pawn1",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::RemoveAllLinksOf"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "Pawn1",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "Pawn1",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "Pawn1.X()",
-                    "=",
-                    "Pawn1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"Pawn\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "King2",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::RemoveAllLinksOf"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "King2",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "King2",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "King2.X()",
-                    "=",
-                    "King2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"King\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Pawn2",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::RemoveAllLinksOf"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "Pawn2",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "Pawn2",
-                    "CurrentPiece"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "CurrentPiece",
-                    "=",
-                    "Pawn2.X()",
-                    "=",
-                    "Pawn2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPiece",
-                    "=",
-                    "\"Pawn\""
                   ],
                   "subInstructions": []
                 }
@@ -5124,7 +5364,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "GreyBlock Raycast",
+          "name": "CurrentPiece select",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5135,18 +5375,25 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Raycast"
+                    "inverted": false,
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "270",
-                    "GreyBlock.Height()",
+                    "King1",
                     "",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
                   ],
                   "subInstructions": []
                 },
@@ -5164,16 +5411,10 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
+                  "parameters": [],
                   "subInstructions": []
                 }
               ],
@@ -5181,24 +5422,72 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
+                    "value": "LinkedObjects::RemoveAllLinksOf"
                   },
                   "parameters": [
                     "",
-                    "GreyBlock",
-                    "ObjVariableBlockUp"
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Opacity"
+                    "value": "LinkedObjects::LinkObjects"
                   },
                   "parameters": [
-                    "GreyBlock",
+                    "",
+                    "King1",
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "King1",
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "CurrentPiece",
                     "=",
-                    "250"
+                    "King1.X()",
+                    "=",
+                    "King1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"King\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "CurrentPiece",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -5212,18 +5501,25 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Raycast"
+                    "inverted": false,
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "0",
-                    "GreyBlock.Height()",
+                    "Pawn1",
                     "",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
                   ],
                   "subInstructions": []
                 },
@@ -5241,16 +5537,10 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
+                  "parameters": [],
                   "subInstructions": []
                 }
               ],
@@ -5258,24 +5548,72 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
+                    "value": "LinkedObjects::RemoveAllLinksOf"
                   },
                   "parameters": [
                     "",
-                    "GreyBlock",
-                    "ObjVariableBlockRight"
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Opacity"
+                    "value": "LinkedObjects::LinkObjects"
                   },
                   "parameters": [
-                    "GreyBlock",
+                    "",
+                    "Pawn1",
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "Pawn1",
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "CurrentPiece",
                     "=",
-                    "250"
+                    "Pawn1.X()",
+                    "=",
+                    "Pawn1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "CurrentPiece",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"Pawn\""
                   ],
                   "subInstructions": []
                 }
@@ -5289,15 +5627,11 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Raycast"
+                    "inverted": false,
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "90",
-                    "GreyBlock.Height()",
+                    "King2",
                     "",
                     "",
                     ""
@@ -5307,154 +5641,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
+                    "value": "MouseButtonReleased"
                   },
                   "parameters": [
                     "",
-                    "GreyBlock",
-                    "ObjVariableBlockDown"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "=",
-                    "250"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Raycast"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "180",
-                    "GreyBlock.Height()",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlockLeft"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "=",
-                    "250"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Raycast"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "270",
-                    "GreyBlock.Height()",
-                    "",
-                    "",
-                    ""
+                    "Left"
                   ],
                   "subInstructions": []
                 },
@@ -5472,16 +5663,10 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
+                  "parameters": [],
                   "subInstructions": []
                 }
               ],
@@ -5489,24 +5674,72 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
+                    "value": "LinkedObjects::RemoveAllLinksOf"
                   },
                   "parameters": [
                     "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Up"
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Opacity"
+                    "value": "LinkedObjects::LinkObjects"
                   },
                   "parameters": [
-                    "GreyBlock",
+                    "",
+                    "King2",
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "King2",
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "CurrentPiece",
                     "=",
-                    "250"
+                    "King2.X()",
+                    "=",
+                    "King2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "CurrentPiece",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"King\""
                   ],
                   "subInstructions": []
                 }
@@ -5520,18 +5753,25 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Raycast"
+                    "inverted": false,
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "0",
-                    "GreyBlock.Height()",
+                    "Pawn2",
                     "",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
                   ],
                   "subInstructions": []
                 },
@@ -5549,16 +5789,10 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
+                  "parameters": [],
                   "subInstructions": []
                 }
               ],
@@ -5566,12 +5800,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Opacity"
+                    "value": "LinkedObjects::RemoveAllLinksOf"
                   },
                   "parameters": [
-                    "GreyBlock",
-                    "=",
-                    "250"
+                    "",
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
@@ -5582,162 +5815,57 @@
                   },
                   "parameters": [
                     "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Right"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Raycast"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "90",
-                    "GreyBlock.Height()",
-                    "",
-                    "",
-                    ""
+                    "Pawn2",
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobalTxt"
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
                   },
                   "parameters": [
-                    "varCurrentPlayer",
-                    "=",
-                    "\"2\""
+                    "",
+                    "Pawn2",
+                    "CurrentPiece"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "inverted": false,
+                    "value": "MettreXY"
                   },
                   "parameters": [
-                    "GreyBlock",
                     "CurrentPiece",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "GreyBlock",
                     "=",
-                    "250"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Down"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Raycast"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "CurrentPiece.X()",
-                    "CurrentPiece.Y()",
-                    "180",
-                    "GreyBlock.Height()",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "varCurrentPlayer",
+                    "Pawn2.X()",
                     "=",
-                    "\"2\""
+                    "Pawn2.Y()"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "inverted": false,
+                    "value": "Montre"
                   },
                   "parameters": [
-                    "GreyBlock",
                     "CurrentPiece",
-                    "",
-                    "",
                     ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "GreyBlock",
-                    "=",
-                    "250"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "LinkedObjects::LinkObjects"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
-                    "",
-                    "GreyBlock",
-                    "ObjVariableBlock2Left"
+                    "varCurrentPiece",
+                    "=",
+                    "\"Pawn\""
                   ],
                   "subInstructions": []
                 }
@@ -5753,7 +5881,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Player1 movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5905,6 +6033,18 @@
                     "CurrentPiece"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -6068,6 +6208,18 @@
                     "\"Player 2\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -6219,6 +6371,18 @@
                     "\"Player 2\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -6368,6 +6532,18 @@
                   },
                   "parameters": [
                     "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 },
@@ -6525,6 +6701,18 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -6688,6 +6876,18 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -6833,6 +7033,18 @@
                   },
                   "parameters": [
                     "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 },
@@ -6996,6 +7208,18 @@
                   },
                   "parameters": [
                     "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 },
@@ -7065,7 +7289,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockRight"
+                    "ObjVariableBlock2Right"
                   ],
                   "subInstructions": []
                 },
@@ -7163,6 +7387,28 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 }
@@ -7206,7 +7452,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockRight"
+                    "ObjVariableBlock2Right"
                   ],
                   "subInstructions": []
                 },
@@ -7316,6 +7562,28 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 }
@@ -7359,7 +7627,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockLeft"
+                    "ObjVariableBlock2Left"
                   ],
                   "subInstructions": []
                 },
@@ -7457,6 +7725,28 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 }
@@ -7500,7 +7790,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockLeft"
+                    "ObjVariableBlock2Left"
                   ],
                   "subInstructions": []
                 },
@@ -7612,6 +7902,28 @@
                     "\"Player 1\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -7653,7 +7965,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockUp"
+                    "ObjVariableBlock2Up"
                   ],
                   "subInstructions": []
                 },
@@ -7753,6 +8065,28 @@
                     "\"Player 1\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -7794,7 +8128,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockUp"
+                    "ObjVariableBlock2Up"
                   ],
                   "subInstructions": []
                 },
@@ -7906,6 +8240,28 @@
                     "\"Player 1\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -7947,7 +8303,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockDown"
+                    "ObjVariableBlock2Down"
                   ],
                   "subInstructions": []
                 },
@@ -8047,6 +8403,28 @@
                     "\"Player 1\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -8088,7 +8466,7 @@
                   "parameters": [
                     "",
                     "GreyBlock",
-                    "ObjVariableBlockDown"
+                    "ObjVariableBlock2Down"
                   ],
                   "subInstructions": []
                 },
@@ -8198,6 +8576,28 @@
                     "CurrentPlayerText",
                     "=",
                     "\"Player 1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "CurrentPiece"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "varCurrentPiece",
+                    "=",
+                    "\"none\""
                   ],
                   "subInstructions": []
                 }
